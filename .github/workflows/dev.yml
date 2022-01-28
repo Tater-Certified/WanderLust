@@ -1,9 +1,9 @@
-name: GH Actions-Dev
+name: Dev
 
 on:
   push:
     branches: [ Dev ]
-  pull-request: 
+  pull_request: 
     branches: [ Dev ]
   workflow_dispatch:
 jobs:
