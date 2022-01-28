@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "wanderlust",
+  "version": "0.1",
+
+  "name": "Wanderlust",
+  "description": "Minecraft RPG reimagined",
+  "authors": [
+    "CallMehKing",
+    "QPCrummer",
+    "Obydux",
+    "I-Like-Trains",
+    "Jneos"
+  ],
+  "contact": {
+    "sources": "https://github.com/CrumCreators/WanderLust"
+  },
+
+  "license": "",
+  "icon": "assets/wanderlust/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.crumcreators.wanderlust.Wanderlust"
+    ]
+  },
+  "mixins": [
+    "wanderlust.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": "*",
+    "fabric": "*",
+    "minecraft": ">=1.18"
+  }
+}
