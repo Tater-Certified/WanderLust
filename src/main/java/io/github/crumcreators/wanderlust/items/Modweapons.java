@@ -1,17 +1,17 @@
 package io.github.crumcreators.wanderlust.items;
 
+import io.github.crumcreators.wanderlust.UI.ModItemGroups;
 import io.github.crumcreators.wanderlust.Wanderlust;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class Modweapons {
-    public static final Item DAGGER = new Item(new FabricItemSettings().group(ItemGroup.COMBAT));
-    public static final Item LONG_SWORD = new Item(new FabricItemSettings().group(ItemGroup.COMBAT));
-    public static final Item WAR_HAMMER = new Item(new FabricItemSettings().group(ItemGroup.COMBAT));
-    public static final Item BLEAM = new Item(new FabricItemSettings().group(ItemGroup.COMBAT));
+    public static final Item DAGGER = new Item(new FabricItemSettings().group(ModItemGroups.WANDERLUST_COMBAT));
+    public static final Item LONG_SWORD = new Item(new FabricItemSettings().group(ModItemGroups.WANDERLUST_COMBAT));
+    public static final Item WAR_HAMMER = new Item(new FabricItemSettings().group(ModItemGroups.WANDERLUST_COMBAT));
+    public static final Item BLEAM = new Item(new FabricItemSettings().group(ModItemGroups.WANDERLUST_COMBAT));
 
     public static void ModWeapons() {
         initializeWeapons();

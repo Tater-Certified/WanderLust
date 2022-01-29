@@ -1,6 +1,8 @@
 package io.github.crumcreators.wanderlust;
 
+import io.github.crumcreators.wanderlust.blocks.Modores;
 import io.github.crumcreators.wanderlust.items.Modmagic;
+import io.github.crumcreators.wanderlust.items.Modranged;
 import io.github.crumcreators.wanderlust.items.Modweapons;
 import net.fabricmc.api.ModInitializer;
 import io.github.crumcreators.wanderlust.blocks.Modblocks;
@@ -12,5 +14,7 @@ public class Wanderlust implements ModInitializer {
         Modblocks.initializeBlocks();
         Modweapons.initializeWeapons();
         Modmagic.initializeMagic();
+        Modores.initializeOres();
+        Modranged.initializeRanged();
     }
 }
