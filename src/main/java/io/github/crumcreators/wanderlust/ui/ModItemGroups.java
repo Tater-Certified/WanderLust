@@ -1,10 +1,10 @@
-package io.github.crumcreators.wanderlust.UI;
+package io.github.crumcreators.wanderlust.ui;
 
 import io.github.crumcreators.wanderlust.Wanderlust;
-import io.github.crumcreators.wanderlust.blocks.Modblocks;
-import io.github.crumcreators.wanderlust.blocks.Modores;
-import io.github.crumcreators.wanderlust.items.Modmagic;
-import io.github.crumcreators.wanderlust.items.Modweapons;
+import io.github.crumcreators.wanderlust.blocks.ModBlocks;
+import io.github.crumcreators.wanderlust.blocks.ModOres;
+import io.github.crumcreators.wanderlust.items.ModMagic;
+import io.github.crumcreators.wanderlust.items.ModWeapons;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -17,12 +17,12 @@ public abstract class ModItemGroups {
 
     public static final ItemGroup WANDERLUST_BLOCKS = FabricItemGroupBuilder.create(
                     new Identifier(Wanderlust.MOD_ID, "block_group"))
-            .icon(() -> new ItemStack(Modblocks.SOULSTIUM_BLOCK))
+            .icon(() -> new ItemStack(ModBlocks.SOULSTIUM_BLOCK))
             .build();
 
     public static final ItemGroup WANDERLUST_COMBAT = FabricItemGroupBuilder.create(
                     new Identifier(Wanderlust.MOD_ID, "combat_group"))
-            .icon(() -> new ItemStack(Modweapons.BLEAM))
+            .icon(() -> new ItemStack(ModWeapons.BLEAM))
             .build();
 
     public static final ItemGroup WANDERLUST_MISC = FabricItemGroupBuilder.create(
@@ -31,11 +31,11 @@ public abstract class ModItemGroups {
             .build();
     public static final ItemGroup WANDERLUST_ORE = FabricItemGroupBuilder.create(
                     new Identifier(Wanderlust.MOD_ID, "ore_group"))
-            .icon(() -> new ItemStack(Modores.EXPERIUM_ORE))
+            .icon(() -> new ItemStack(ModOres.EXPERIUM_ORE))
             .build();
     public static final ItemGroup WANDERLUST_MAGIC = FabricItemGroupBuilder.create(
                     new Identifier(Wanderlust.MOD_ID, "magic_group"))
-            .icon(() -> new ItemStack(Modmagic.PRISM))
+            .icon(() -> new ItemStack(ModMagic.PRISM))
             .build();
 }
 

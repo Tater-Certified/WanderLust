@@ -1,20 +1,20 @@
 package io.github.crumcreators.wanderlust;
 
-import io.github.crumcreators.wanderlust.blocks.Modores;
-import io.github.crumcreators.wanderlust.items.Modmagic;
-import io.github.crumcreators.wanderlust.items.Modranged;
-import io.github.crumcreators.wanderlust.items.Modweapons;
+import io.github.crumcreators.wanderlust.blocks.ModOres;
+import io.github.crumcreators.wanderlust.items.ModMagic;
+import io.github.crumcreators.wanderlust.items.ModRanged;
+import io.github.crumcreators.wanderlust.items.ModWeapons;
 import net.fabricmc.api.ModInitializer;
-import io.github.crumcreators.wanderlust.blocks.Modblocks;
+import io.github.crumcreators.wanderlust.blocks.ModBlocks;
 
 public class Wanderlust implements ModInitializer {
     public static String MOD_ID = "wanderlust";
     @Override
     public void onInitialize() {
-        Modblocks.initializeBlocks();
-        Modweapons.initializeWeapons();
-        Modmagic.initializeMagic();
-        Modores.initializeOres();
-        Modranged.initializeRanged();
+        ModBlocks.initializeBlocks();
+        ModWeapons.initializeWeapons();
+        ModMagic.initializeMagic();
+        ModOres.initializeOres();
+        ModRanged.initializeRanged();
     }
 }

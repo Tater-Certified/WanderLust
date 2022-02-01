@@ -1,6 +1,6 @@
 package io.github.crumcreators.wanderlust.blocks;
 
-import io.github.crumcreators.wanderlust.UI.ModItemGroups;
+import io.github.crumcreators.wanderlust.ui.ModItemGroups;
 import io.github.crumcreators.wanderlust.Wanderlust;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -10,16 +10,13 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-public class Modblocks {
+public class ModBlocks {
     //Block Settings
     public static final Block SOULSTIUM_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(20.0f, 50.0f));
     public static final Block HELLSTONE_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(5.0f, 15.0f));
     public static final Block DARKNESS_BLOCK = new Block(FabricBlockSettings.of(Material.GLASS).strength(30.0f, 10.0f));
     public static final Block LUMINANCE_BLOCK = new Block(FabricBlockSettings.of(Material.GLASS).strength(30.0f, 10.0f));
 
-    public static void ModBlocks() {
-        initializeBlocks();
-    }
     //Register Blocks
     public static void initializeBlocks() {
         Registry.register(Registry.BLOCK, new Identifier(Wanderlust.MOD_ID,"soulstium_block"), SOULSTIUM_BLOCK);
